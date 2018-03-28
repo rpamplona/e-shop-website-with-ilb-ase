@@ -11,10 +11,10 @@ using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.OpenIdConnect;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.HttpOverrides;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System;
-using System.Threading.Tasks;
 
 namespace Admin
 {
@@ -35,24 +35,7 @@ namespace Admin
                 sharedOptions.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
                 sharedOptions.DefaultChallengeScheme = OpenIdConnectDefaults.AuthenticationScheme;
             })
-            .AddOpenIdConnect(options =>
-            {
-                var azureAdOptions = Configuration.GetSection("AzureAd").Get<AzureAdOptions>();
-                options.ClientId = azureAdOptions.ClientId;
-                options.Authority = azureAdOptions.Instance + azureAdOptions.TenantId;
-                options.CallbackPath = azureAdOptions.CallbackPath;
-
-                options.Events = new OpenIdConnectEvents()
-                {
-                    OnRedirectToIdentityProvider = (context) =>
-                    {
-                        string appBaseUrl = context.Request.Scheme + "://" + "qa-eshop-admin.canviz.tk" + context.Request.PathBase;
-                        context.ProtocolMessage.RedirectUri = appBaseUrl + options.CallbackPath;
-                        context.ProtocolMessage.PostLogoutRedirectUri = appBaseUrl;
-                        return Task.FromResult(0);
-                    }
-                };
-            })
+            .AddAzureAd(options => Configuration.Bind("AzureAd", options))
             .AddCookie();
 
             var oDataServiceBaseUrl = Configuration.GetValue<string>("ODataServiceBaseUrl");
@@ -76,6 +59,11 @@ namespace Admin
             {
                 app.UseExceptionHandler("/Home/Error");
             }
+
+            app.UseForwardedHeaders(new ForwardedHeadersOptions
+            {
+                ForwardedHeaders = ForwardedHeaders.All
+            });
 
             app.UseStaticFiles();
 

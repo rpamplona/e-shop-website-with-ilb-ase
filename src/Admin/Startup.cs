@@ -46,7 +46,7 @@ namespace Admin
                 {
                     OnRedirectToIdentityProvider = (context) =>
                     {
-                        string appBaseUrl = context.Request.Scheme + "://" + context.Request.Host + context.Request.PathBase;
+                        string appBaseUrl = context.Request.Scheme + "://" + "qa-eshop-admin.canviz.tk" + context.Request.PathBase;
                         context.ProtocolMessage.RedirectUri = appBaseUrl + options.CallbackPath;
                         context.ProtocolMessage.PostLogoutRedirectUri = appBaseUrl;
                         return Task.FromResult(0);

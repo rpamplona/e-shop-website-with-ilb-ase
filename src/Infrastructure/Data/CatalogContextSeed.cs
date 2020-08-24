@@ -64,9 +64,8 @@ namespace Infrastructure.Data
             return new List<CatalogBrand>()
             {
                 new CatalogBrand() { Brand = "Azure"},
-                new CatalogBrand() { Brand = ".NET" },
                 new CatalogBrand() { Brand = "Visual Studio" },
-                new CatalogBrand() { Brand = "SQL Server" },
+                new CatalogBrand() { Brand = "AWS" },
                 new CatalogBrand() { Brand = "Other" }
             };
         }
@@ -86,18 +85,18 @@ namespace Infrastructure.Data
         {
             return new List<CatalogItem>()
             {
-                new CatalogItem() { CatalogTypeId=2,CatalogBrandId=2, Description = ".NET Bot Black Sweatshirt", Name = ".NET Bot Black Sweatshirt", Price = 19.5M, PictureUri = "http://catalogbaseurltobereplaced/images/products/1.png" },
-                new CatalogItem() { CatalogTypeId=1,CatalogBrandId=2, Description = ".NET Black & White Mug", Name = ".NET Black & White Mug", Price= 8.50M, PictureUri = "http://catalogbaseurltobereplaced/images/products/2.png" },
-                new CatalogItem() { CatalogTypeId=2,CatalogBrandId=5, Description = "Prism White T-Shirt", Name = "Prism White T-Shirt", Price = 12, PictureUri = "http://catalogbaseurltobereplaced/images/products/3.png" },
-                new CatalogItem() { CatalogTypeId=2,CatalogBrandId=2, Description = ".NET Foundation Sweatshirt", Name = ".NET Foundation Sweatshirt", Price = 12, PictureUri = "http://catalogbaseurltobereplaced/images/products/4.png" },
-                new CatalogItem() { CatalogTypeId=3,CatalogBrandId=5, Description = "Roslyn Red Sheet", Name = "Roslyn Red Sheet", Price = 8.5M, PictureUri = "http://catalogbaseurltobereplaced/images/products/5.png" },
-                new CatalogItem() { CatalogTypeId=2,CatalogBrandId=2, Description = ".NET Blue Sweatshirt", Name = ".NET Blue Sweatshirt", Price = 12, PictureUri = "http://catalogbaseurltobereplaced/images/products/6.png" },
-                new CatalogItem() { CatalogTypeId=2,CatalogBrandId=5, Description = "Roslyn Red T-Shirt", Name = "Roslyn Red T-Shirt", Price = 12, PictureUri = "http://catalogbaseurltobereplaced/images/products/7.png"  },
-                new CatalogItem() { CatalogTypeId=2,CatalogBrandId=5, Description = "Kudu Purple Sweatshirt", Name = "Kudu Purple Sweatshirt", Price = 8.5M, PictureUri = "http://catalogbaseurltobereplaced/images/products/8.png" },
-                new CatalogItem() { CatalogTypeId=1,CatalogBrandId=5, Description = "Cup<T> White Mug", Name = "Cup<T> White Mug", Price = 12, PictureUri = "http://catalogbaseurltobereplaced/images/products/9.png" },
-                new CatalogItem() { CatalogTypeId=3,CatalogBrandId=2, Description = ".NET Foundation Sheet", Name = ".NET Foundation Sheet", Price = 12, PictureUri = "http://catalogbaseurltobereplaced/images/products/10.png" },
-                new CatalogItem() { CatalogTypeId=3,CatalogBrandId=2, Description = "Cup<T> Sheet", Name = "Cup<T> Sheet", Price = 8.5M, PictureUri = "http://catalogbaseurltobereplaced/images/products/11.png" },
-                new CatalogItem() { CatalogTypeId=2,CatalogBrandId=5, Description = "Prism White TShirt", Name = "Prism White TShirt", Price = 12, PictureUri = "http://catalogbaseurltobereplaced/images/products/12.png" }
+                new CatalogItem() { CatalogTypeId=2,CatalogBrandId=2, Description = "Pen", Name = "Pen", Price = 19.5M, PictureUri = "http://catalogbaseurltobereplaced/images/products/1.png" },
+                new CatalogItem() { CatalogTypeId=1,CatalogBrandId=2, Description = "Bring the Energy", Name = "Bring the Energy", Price= 8.50M, PictureUri = "http://catalogbaseurltobereplaced/images/products/2.png" },
+                new CatalogItem() { CatalogTypeId=2,CatalogBrandId=5, Description = "Purple Tumber", Name = "Purple Tumbler", Price = 12, PictureUri = "http://catalogbaseurltobereplaced/images/products/3.png" },
+                new CatalogItem() { CatalogTypeId=2,CatalogBrandId=2, Description = "Planner", Name = "Planner", Price = 12, PictureUri = "http://catalogbaseurltobereplaced/images/products/4.png" },
+                new CatalogItem() { CatalogTypeId=3,CatalogBrandId=5, Description = "Little Disruptor", Name = "Little Disruptor", Price = 8.5M, PictureUri = "http://catalogbaseurltobereplaced/images/products/5.png" },
+                new CatalogItem() { CatalogTypeId=2,CatalogBrandId=2, Description = "USB FlashDisk", Name = "USB FlashDisk", Price = 12, PictureUri = "http://catalogbaseurltobereplaced/images/products/6.png" },
+                new CatalogItem() { CatalogTypeId=2,CatalogBrandId=5, Description = "Socks", Name = "Socks", Price = 12, PictureUri = "http://catalogbaseurltobereplaced/images/products/7.png"  },
+                new CatalogItem() { CatalogTypeId=2,CatalogBrandId=5, Description = "White Tumbler", Name = "White Tumbler", Price = 8.5M, PictureUri = "http://catalogbaseurltobereplaced/images/products/8.png" },
+                new CatalogItem() { CatalogTypeId=1,CatalogBrandId=5, Description = "Tote bag", Name = "Tote bag", Price = 12, PictureUri = "http://catalogbaseurltobereplaced/images/products/9.png" },
+                new CatalogItem() { CatalogTypeId=3,CatalogBrandId=2, Description = "Accenture T-shirt", Name = "Accenture T-shirt", Price = 12, PictureUri = "http://catalogbaseurltobereplaced/images/products/10.png" },
+                new CatalogItem() { CatalogTypeId=3,CatalogBrandId=2, Description = "Glass Tumbler", Name = "Glass Tumbler", Price = 8.5M, PictureUri = "http://catalogbaseurltobereplaced/images/products/11.png" },
+                new CatalogItem() { CatalogTypeId=2,CatalogBrandId=5, Description = "UV Sanitizer", Name = "UV Sanitizer", Price = 12, PictureUri = "http://catalogbaseurltobereplaced/images/products/12.png" }
             };
         }
     }

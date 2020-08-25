@@ -91,7 +91,7 @@ namespace Infrastructure.Data
                 new CatalogItem() { CatalogTypeId=1,CatalogBrandId=1, Description = "Purple Tumber", Name = "Purple Tumbler", Price = 12, PictureUri = "http://catalogbaseurltobereplaced/images/products/3.png" },
                 new CatalogItem() { CatalogTypeId=3,CatalogBrandId=3, Description = "Planner", Name = "Planner", Price = 12, PictureUri = "http://catalogbaseurltobereplaced/images/products/4.png" },
                 new CatalogItem() { CatalogTypeId=2,CatalogBrandId=2, Description = "Little Disruptor", Name = "Little Disruptor", Price = 8.5M, PictureUri = "http://catalogbaseurltobereplaced/images/products/5.png" },
-                new CatalogItem() { CatalogTypeId=5,CatalogBrandId=5, Description = "USB FlashDisk", Name = "USB FlashDisk", Price = 12, PictureUri = "http://catalogbaseurltobereplaced/images/products/6.png" },
+                new CatalogItem() { CatalogTypeId=5,CatalogBrandId=4, Description = "USB FlashDisk", Name = "USB FlashDisk", Price = 12, PictureUri = "http://catalogbaseurltobereplaced/images/products/6.png" },
                 new CatalogItem() { CatalogTypeId=2,CatalogBrandId=2, Description = "Socks", Name = "Socks", Price = 12, PictureUri = "http://catalogbaseurltobereplaced/images/products/7.png"  },
                 new CatalogItem() { CatalogTypeId=1,CatalogBrandId=1, Description = "White Tumbler", Name = "White Tumbler", Price = 8.5M, PictureUri = "http://catalogbaseurltobereplaced/images/products/8.png" },
                 new CatalogItem() { CatalogTypeId=4,CatalogBrandId=4, Description = "Tote bag", Name = "Tote bag", Price = 12, PictureUri = "http://catalogbaseurltobereplaced/images/products/9.png" },

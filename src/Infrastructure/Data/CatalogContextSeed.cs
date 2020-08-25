@@ -75,8 +75,9 @@ namespace Infrastructure.Data
             return new List<CatalogType>()
             {
                 new CatalogType() { Type = "Mug"},
-                new CatalogType() { Type = "T-Shirt" },
-                new CatalogType() { Type = "Sheet" },
+                new CatalogType() { Type = "Wearables" },
+                new CatalogType() { Type = "Office Supplies" },
+                new CatalogType() { Type = "Bag" },
                 new CatalogType() { Type = "USB Memory Stick" }
             };
         }
@@ -85,18 +86,18 @@ namespace Infrastructure.Data
         {
             return new List<CatalogItem>()
             {
-                new CatalogItem() { CatalogTypeId=2,CatalogBrandId=2, Description = "Pen", Name = "Pen", Price = 19.5M, PictureUri = "http://catalogbaseurltobereplaced/images/products/1.png" },
-                new CatalogItem() { CatalogTypeId=1,CatalogBrandId=2, Description = "Bring the Energy", Name = "Bring the Energy", Price= 8.50M, PictureUri = "http://catalogbaseurltobereplaced/images/products/2.png" },
-                new CatalogItem() { CatalogTypeId=2,CatalogBrandId=5, Description = "Purple Tumber", Name = "Purple Tumbler", Price = 12, PictureUri = "http://catalogbaseurltobereplaced/images/products/3.png" },
-                new CatalogItem() { CatalogTypeId=2,CatalogBrandId=2, Description = "Planner", Name = "Planner", Price = 12, PictureUri = "http://catalogbaseurltobereplaced/images/products/4.png" },
-                new CatalogItem() { CatalogTypeId=3,CatalogBrandId=5, Description = "Little Disruptor", Name = "Little Disruptor", Price = 8.5M, PictureUri = "http://catalogbaseurltobereplaced/images/products/5.png" },
-                new CatalogItem() { CatalogTypeId=2,CatalogBrandId=2, Description = "USB FlashDisk", Name = "USB FlashDisk", Price = 12, PictureUri = "http://catalogbaseurltobereplaced/images/products/6.png" },
-                new CatalogItem() { CatalogTypeId=2,CatalogBrandId=5, Description = "Socks", Name = "Socks", Price = 12, PictureUri = "http://catalogbaseurltobereplaced/images/products/7.png"  },
-                new CatalogItem() { CatalogTypeId=2,CatalogBrandId=5, Description = "White Tumbler", Name = "White Tumbler", Price = 8.5M, PictureUri = "http://catalogbaseurltobereplaced/images/products/8.png" },
-                new CatalogItem() { CatalogTypeId=1,CatalogBrandId=5, Description = "Tote bag", Name = "Tote bag", Price = 12, PictureUri = "http://catalogbaseurltobereplaced/images/products/9.png" },
-                new CatalogItem() { CatalogTypeId=3,CatalogBrandId=2, Description = "Accenture T-shirt", Name = "Accenture T-shirt", Price = 12, PictureUri = "http://catalogbaseurltobereplaced/images/products/10.png" },
-                new CatalogItem() { CatalogTypeId=3,CatalogBrandId=2, Description = "Glass Tumbler", Name = "Glass Tumbler", Price = 8.5M, PictureUri = "http://catalogbaseurltobereplaced/images/products/11.png" },
-                new CatalogItem() { CatalogTypeId=2,CatalogBrandId=5, Description = "UV Sanitizer", Name = "UV Sanitizer", Price = 12, PictureUri = "http://catalogbaseurltobereplaced/images/products/12.png" }
+                new CatalogItem() { CatalogTypeId=3,CatalogBrandId=3, Description = "Pen", Name = "Pen", Price = 19.5M, PictureUri = "http://catalogbaseurltobereplaced/images/products/1.png" },
+                new CatalogItem() { CatalogTypeId=2,CatalogBrandId=2, Description = "Bring the Energy", Name = "Bring the Energy", Price= 8.50M, PictureUri = "http://catalogbaseurltobereplaced/images/products/2.png" },
+                new CatalogItem() { CatalogTypeId=1,CatalogBrandId=1, Description = "Purple Tumber", Name = "Purple Tumbler", Price = 12, PictureUri = "http://catalogbaseurltobereplaced/images/products/3.png" },
+                new CatalogItem() { CatalogTypeId=3,CatalogBrandId=3, Description = "Planner", Name = "Planner", Price = 12, PictureUri = "http://catalogbaseurltobereplaced/images/products/4.png" },
+                new CatalogItem() { CatalogTypeId=2,CatalogBrandId=2, Description = "Little Disruptor", Name = "Little Disruptor", Price = 8.5M, PictureUri = "http://catalogbaseurltobereplaced/images/products/5.png" },
+                new CatalogItem() { CatalogTypeId=5,CatalogBrandId=5, Description = "USB FlashDisk", Name = "USB FlashDisk", Price = 12, PictureUri = "http://catalogbaseurltobereplaced/images/products/6.png" },
+                new CatalogItem() { CatalogTypeId=2,CatalogBrandId=2, Description = "Socks", Name = "Socks", Price = 12, PictureUri = "http://catalogbaseurltobereplaced/images/products/7.png"  },
+                new CatalogItem() { CatalogTypeId=1,CatalogBrandId=1, Description = "White Tumbler", Name = "White Tumbler", Price = 8.5M, PictureUri = "http://catalogbaseurltobereplaced/images/products/8.png" },
+                new CatalogItem() { CatalogTypeId=4,CatalogBrandId=4, Description = "Tote bag", Name = "Tote bag", Price = 12, PictureUri = "http://catalogbaseurltobereplaced/images/products/9.png" },
+                new CatalogItem() { CatalogTypeId=2,CatalogBrandId=2, Description = "Accenture T-shirt", Name = "Accenture T-shirt", Price = 12, PictureUri = "http://catalogbaseurltobereplaced/images/products/10.png" },
+                new CatalogItem() { CatalogTypeId=1,CatalogBrandId=1, Description = "Glass Tumbler", Name = "Glass Tumbler", Price = 8.5M, PictureUri = "http://catalogbaseurltobereplaced/images/products/11.png" },
+                new CatalogItem() { CatalogTypeId=3,CatalogBrandId=3, Description = "UV Sanitizer", Name = "UV Sanitizer", Price = 12, PictureUri = "http://catalogbaseurltobereplaced/images/products/12.png" }
             };
         }
     }

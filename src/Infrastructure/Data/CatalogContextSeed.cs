@@ -97,7 +97,7 @@ namespace Infrastructure.Data
                 new CatalogItem() { CatalogTypeId=4,CatalogBrandId=4, Description = "Tote bag", Name = "Tote bag", Price = 12, PictureUri = "http://catalogbaseurltobereplaced/images/products/9.png" },
                 new CatalogItem() { CatalogTypeId=2,CatalogBrandId=2, Description = "Accenture T-shirt", Name = "Accenture T-shirt", Price = 12, PictureUri = "http://catalogbaseurltobereplaced/images/products/10.png" },
                 new CatalogItem() { CatalogTypeId=1,CatalogBrandId=1, Description = "Glass Tumbler", Name = "Glass Tumbler", Price = 8.5M, PictureUri = "http://catalogbaseurltobereplaced/images/products/11.png" },
-                new CatalogItem() { CatalogTypeId=3,CatalogBrandId=3, Description = "UV Sanitizer", Name = "UV Sanitizer", Price = 12, PictureUri = "http://catalogbaseurltobereplaced/images/products/12.png" }
+                new CatalogItem() { CatalogTypeId=4,CatalogBrandId=3, Description = "Lunch Box", Name = "Lunch Box", Price = 12, PictureUri = "http://catalogbaseurltobereplaced/images/products/12.png" }
             };
         }
     }
